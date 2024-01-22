@@ -8,6 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { StudyTipsComponent } from './study-tips/study-tips.component';
 import { SingInComponent } from './sing-in/sing-in.component';
+import { AllCoursesComponent } from './all-courses/all-courses.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { SingInComponent } from './sing-in/sing-in.component';
     FooterComponent,
     StudyTipsComponent,
     SingInComponent,
+    AllCoursesComponent,
+    ContactComponent,
   
   ],
   imports: [
