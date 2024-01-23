@@ -10,6 +10,9 @@ import { StudyTipsComponent } from './study-tips/study-tips.component';
 import { SingInComponent } from './sing-in/sing-in.component';
 import { AllCoursesComponent } from './all-courses/all-courses.component';
 import { ContactComponent } from './contact/contact.component';
+import { AdminComponent } from './admin/admin.component';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { AddTeacherComponent } from './add-teacher/add-teacher.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { ContactComponent } from './contact/contact.component';
     SingInComponent,
     AllCoursesComponent,
     ContactComponent,
+    AdminComponent,
+    AddStudentComponent,
+    AddTeacherComponent,
   
   ],
   imports: [
