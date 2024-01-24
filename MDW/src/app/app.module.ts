@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AddTeacherComponent } from './add-teacher/add-teacher.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AddTeacherComponent } from './add-teacher/add-teacher.component';
     AdminComponent,
     AddStudentComponent,
     AddTeacherComponent,
+    LoginComponent,
   
   ],
   imports: [

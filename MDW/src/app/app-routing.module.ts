@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AddTeacherComponent } from './add-teacher/add-teacher.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,8 @@ const routes: Routes = [
   {path:'Admin', component:AdminComponent},
   {path:'add-student', component:AddStudentComponent},
   {path:'add-teacher', component:AddTeacherComponent},
+  {path:'login', component:LoginComponent},
+
 
 
 
