@@ -9,6 +9,8 @@ import { AdminComponent } from './admin/admin.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AddTeacherComponent } from './add-teacher/add-teacher.component';
 import { LoginComponent } from './login/login.component';
+import { UpdateTeacherComponent } from './update-teacher/update-teacher.component';
+import { ProfileTeacherComponent } from './profile-teacher/profile-teacher.component';
 
 const routes: Routes = [
   {
@@ -25,6 +27,9 @@ const routes: Routes = [
   {path:'add-student', component:AddStudentComponent},
   {path:'add-teacher', component:AddTeacherComponent},
   {path:'login', component:LoginComponent},
+  {path:'updateT', component:UpdateTeacherComponent},
+  {path:'profilT', component:ProfileTeacherComponent},
+
 
 
 

@@ -14,7 +14,9 @@ import { AdminComponent } from './admin/admin.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AddTeacherComponent } from './add-teacher/add-teacher.component';
 import { LoginComponent } from './login/login.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ProfileTeacherComponent } from './profile-teacher/profile-teacher.component';
+import { UpdateTeacherComponent } from './update-teacher/update-teacher.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,10 +31,13 @@ import { LoginComponent } from './login/login.component';
     AddStudentComponent,
     AddTeacherComponent,
     LoginComponent,
+    ProfileTeacherComponent,
+    UpdateTeacherComponent,
   
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
