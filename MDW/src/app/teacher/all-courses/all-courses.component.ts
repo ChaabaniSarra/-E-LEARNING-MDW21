@@ -7,7 +7,7 @@ import { ServiceService } from 'src/app/service.service';
   styleUrls: ['./all-courses.component.css']
 })
 export class AllCoursesComponent {
-  course :any;
+  courses :any;
 constructor(private service:ServiceService) {}
 
  
@@ -17,7 +17,7 @@ constructor(private service:ServiceService) {}
     this.service.getAllCourses().subscribe(
       (res) => {
         console.log(res);
-        this.course=res ;
+        this.courses=res ;
       },
       (err) => {
         console.error(err);

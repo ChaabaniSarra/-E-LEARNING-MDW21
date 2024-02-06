@@ -20,11 +20,22 @@ router.post('/addCourse' , (req,res)=>{
     
     
     
-   router.get('/getallCourse' , ()=>{
+  router.get ("/getAllCourses" ,async (req,res)=>{
+    try{
+        const course=await Course.find()
+        // res.json(course)
+        res.send(course)
+    } catch (err) {
+            res.status(400).send("Err");
+        }
+
+   })
     
-        console.log('get work  ')
-    })
-    
+
+
+
+
+   
    router.put('/uppdateCourse' , ()=>{
     
         console.log('add  ')

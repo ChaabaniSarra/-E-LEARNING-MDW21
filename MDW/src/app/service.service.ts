@@ -15,9 +15,11 @@ Teacher:any[]=[];
     return this.HTTP.post<any>(this.URL+'Teacher/addTeacher', Teacher)
    }
 
-  //  getAllTeachers(){
-  //   return this.HTTP.get<any>(this.URL + "Teacher/getallT",Teacher )
-  //  }
+   getAllTeachers(){
+    return this.HTTP.get<any>(this.URL + "Teacher/getallT")
+   }
+
+
 
   //  ____________________________________________________________________________________________
 //course
@@ -28,7 +30,7 @@ Teacher:any[]=[];
 
   //  affichage des coures 
    getAllCourses(){
-    return this.HTTP.get<any>(this.URL+"Course/getallcourses", )
+    return this.HTTP.get<any>(this.URL+"Course/getAllCourses", )
     }
 
 

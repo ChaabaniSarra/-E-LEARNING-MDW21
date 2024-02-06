@@ -20,6 +20,8 @@ import { UpdateTeacherComponent } from './admin/update-teacher/update-teacher.co
 import { TeacherComponent } from './teacher/teacher.component';
 import { AddCourseComponent } from './teacher/add-course/add-course.component';
 import { AdmineLoginComponent } from './admin/admine-login/admine-login.component';
+import { StudentComponent } from './student/student.component';
+import { DeleteTeacherComponent } from './admin/delete-teacher/delete-teacher.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +41,8 @@ import { AdmineLoginComponent } from './admin/admine-login/admine-login.componen
     TeacherComponent,
     AddCourseComponent,
     AdmineLoginComponent,
+    StudentComponent,
+    DeleteTeacherComponent,
   
   ],
   imports: [

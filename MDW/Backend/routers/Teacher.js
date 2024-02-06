@@ -38,9 +38,6 @@ router.get ("/getAllT" ,async (req,res)=>{
             res.status(400).send("Err");
         }
 
-
-
-
    })
 
    router.delete("/delT/:id", async (req, res) => {

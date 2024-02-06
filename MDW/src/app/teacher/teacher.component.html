@@ -1,1 +1,80 @@
-<p>teacher works!</p>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Explore Our <b>  Instructors</b></h2> <br>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-3" *ngFor=" let teacher of Teachers">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src={{teacher.profilePicture}} class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4></h4>
+									<p class="item-price"> <span>{{teacher.firstName}}  {{teacher.lastName}} </span></p>
+
+									<p class="item-price"> <span>{{teacher.assignedSub}}</span></p>
+							
+									<a routerLink="/profilT" href="#" class="btn btn-primary">View Profile</a>
+								</div>						
+							</div>
+						</div>
+						
+												
+						
+					</div>
+				</div> 
+				<div class="carousel-item">
+					<div class="col-sm-3" *ngFor=" let teacher of Teachers">
+                        <div class="thumb-wrapper">
+                            <div class="img-box">
+                                <img src={{teacher.profilePicture}} class="img-fluid" alt="">
+                            </div>
+                            <div class="thumb-content">
+                                <h4></h4>
+                                <p class="item-price"> <span>{{teacher.firstName}}  {{teacher.lastName}} </span></p>
+
+                                <p class="item-price"> <span>{{teacher.assignedSub}}</span></p>
+                        
+                                <a routerLink="/profilT" href="#" class="btn btn-primary">View Profile</a>
+                            </div>						
+                        </div>
+                    </div>
+				<div class="carousel-item">
+					
+					<div class="col-sm-3" *ngFor=" let teacher of Teachers">
+                        <div class="thumb-wrapper">
+                            <div class="img-box">
+                                <img src={{teacher.profilePicture}} class="img-fluid" alt="">
+                            </div>
+                            <div class="thumb-content">
+                                <h4></h4>
+                                <p class="item-price"> <span>{{teacher.firstName}}  {{teacher.lastName}} </span></p>
+
+                                <p class="item-price"> <span>{{teacher.assignedSub}}</span></p>
+                        
+                                <a routerLink="/profilT" href="#" class="btn btn-primary">View Profile</a>
+                            </div>						
+                        </div>
+                    </div>
+				</div>
+			</div> 
+			 <!-- Carousel controls  -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
