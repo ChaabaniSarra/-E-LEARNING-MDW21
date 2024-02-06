@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -8,15 +8,18 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { StudyTipsComponent } from './study-tips/study-tips.component';
 import { SingInComponent } from './sing-in/sing-in.component';
-import { AllCoursesComponent } from './all-courses/all-courses.component';
+import { AllCoursesComponent } from './teacher/all-courses/all-courses.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
-import { AddStudentComponent } from './add-student/add-student.component';
-import { AddTeacherComponent } from './add-teacher/add-teacher.component';
+import { AddStudentComponent } from './admin/add-student/add-student.component';
+import { AddTeacherComponent } from './admin/add-teacher/add-teacher.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ProfileTeacherComponent } from './profile-teacher/profile-teacher.component';
-import { UpdateTeacherComponent } from './update-teacher/update-teacher.component';
+import { ProfileTeacherComponent } from './teacher/profile-teacher/profile-teacher.component';
+import { UpdateTeacherComponent } from './admin/update-teacher/update-teacher.component';
+import { TeacherComponent } from './teacher/teacher.component';
+import { AddCourseComponent } from './teacher/add-course/add-course.component';
+import { AdmineLoginComponent } from './admin/admine-login/admine-login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,12 +36,16 @@ import { UpdateTeacherComponent } from './update-teacher/update-teacher.componen
     LoginComponent,
     ProfileTeacherComponent,
     UpdateTeacherComponent,
+    TeacherComponent,
+    AddCourseComponent,
+    AdmineLoginComponent,
   
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

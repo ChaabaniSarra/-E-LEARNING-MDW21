@@ -1,4 +1,5 @@
 const express = require('express');
+
 const router = express.Router();
 
 const Admine =require('../Models/Admine')
@@ -6,16 +7,16 @@ const Admine =require('../Models/Admine')
 
 
 
-router.post('/add' , (req,res)=>{
-    data=req.body 
-    usr =new Admine( data) ;
-    usr.save()
-    .then((saveAdmine)=> {
-    res.status(200).send(saveAdmine)
+// router.post('/add' , (req,res)=>{
+//     data=req.body 
+//     usr =new Admine( data) ;
+//     usr.save()
+//     .then((saveAdmine)=> {
+//     res.status(200).send(saveAdmine)
         
-    })
-    .catch ((err)=> res.status(400).send("Err"));
-    })
+//     })
+//     .catch ((err)=> res.status(400).send("Err"));
+//     })
     
     
     

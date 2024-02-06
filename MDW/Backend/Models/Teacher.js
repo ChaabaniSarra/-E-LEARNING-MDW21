@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 
 
 const Teacher= mongoose.model( 'Teacher' , {
-
-    Firstname: String,
-    Lastname: String,
-    AssignedSubject: String,
+    profilePicture:String,
+    firstName: String,
+    lastName: String,
+    assignedSub: String,
     email: String,
     password: Number,
 
