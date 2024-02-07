@@ -42,43 +42,25 @@
                         <th>Last Name</th>
                         <th>Email</th>
                         <th>Assined Subject</th>
+                        <th>Edit</th>
+
                     </tr>
                 </thead>
-                <tbody>
+                <tbody *ngFor="let teacher of Teachers">
                     <tr>
-                        <td>John </td>
-                        <td>Deo</td>
-                        <td>johngmail.com</td>
-                        <td>B.D.D</td>
+                        <td>{{teacher.firstName}} </td>
+                        <td>{{teacher.lastName}}</td>
+                        <td>{{teacher.email}}</td>
+                        <td>{{teacher.assignedSub}}</td>
 
                         <td>
                             <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
                             <a routerLink="/updateT" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip" (click)="Delete(teacher._id)"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
-                    <tr>
-                        <td>John </td>
-                        <td>Deo</td>
-                        <td>johngmail.com</td>
-                        <td>B.D.D</td>
-                        <td>
-                            <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                            <a  routerLink="/updateT" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>John </td>
-                        <td>Deo</td>
-                        <td>johngmail.com</td>
-                        <td>B.D.D</td>
-                        <td>
-                            <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                            <a routerLink="/updateT" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                        </td>
-                    </tr>      
+                   
+                  
                 </tbody>
             </table>
         </div>

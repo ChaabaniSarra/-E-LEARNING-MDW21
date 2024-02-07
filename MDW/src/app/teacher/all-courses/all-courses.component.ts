@@ -12,8 +12,6 @@ constructor(private service:ServiceService) {}
 
  
   ngOnInit(): void {
-
-
     this.service.getAllCourses().subscribe(
       (res) => {
         console.log(res);
@@ -24,4 +22,16 @@ constructor(private service:ServiceService) {}
       });
 
   }
+Delete(id:any){
+this.service.deletecourse(id).subscribe(
+  res=>{
+    console.log(res)
+    alert("Deleted Successfully");
+    window.location.reload();
+  },(err) => {
+    console.error(err);
+  }
+)
+}
+  
 }

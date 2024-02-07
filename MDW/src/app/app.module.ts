@@ -22,6 +22,7 @@ import { AddCourseComponent } from './teacher/add-course/add-course.component';
 import { AdmineLoginComponent } from './admin/admine-login/admine-login.component';
 import { StudentComponent } from './student/student.component';
 import { DeleteTeacherComponent } from './admin/delete-teacher/delete-teacher.component';
+import { DeleteCourseComponent } from './teacher/delete-course/delete-course.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +44,7 @@ import { DeleteTeacherComponent } from './admin/delete-teacher/delete-teacher.co
     AdmineLoginComponent,
     StudentComponent,
     DeleteTeacherComponent,
+    DeleteCourseComponent,
   
   ],
   imports: [

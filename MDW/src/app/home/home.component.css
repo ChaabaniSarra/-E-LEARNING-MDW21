@@ -65,7 +65,7 @@ justify-content: center;
 }
 
 .box-title {
-  border-left: 3px solid var(--purple);
+  border-left: 3px solid var(--blue);
   padding-left: 12px;
 }
 
@@ -87,7 +87,7 @@ justify-content: center;
 }
 
 .button:hover {
-  background: var(--purple);
+  background: var(--blue);
 }
 
 .fill-one {
@@ -188,7 +188,7 @@ h2::after {
 	position: absolute;
 	margin: 0 auto;
 	height: 3px;
-	background: #8fbc54;
+	background: #477bc9;
 	left: 0;
 	right: 0;
 	bottom: -10px;
@@ -229,7 +229,7 @@ h2::after {
 }
 .carousel .overview b {
 	text-transform: uppercase;
-	color: #7AA641;
+	color: #477bc9;
 }
 .carousel-control-prev, .carousel-control-next {
 	width: 40px;

@@ -30,7 +30,21 @@ router.post('/addCourse' , (req,res)=>{
         }
 
    })
+
+  
+    router.delete( "/deleteCourse/:id", async (req, res) => {
+        try {
+            let id = req.params.id;
+            const deleteCourse = await Course.findByIdAndDelete(id);
     
+            if (!deleteCourse)
+                return res.status(400).send("The cOURSE with the given ID was not found.");
+    
+            res.send(deleteCourse);
+        } catch (err) {
+            res.status(400).send("Err");
+        }
+    });
 
 
 

@@ -7,8 +7,10 @@ export class ServiceService {
 course :any[]=[];
 Teacher:any[]=[];
 
+
   constructor(private HTTP : HttpClient) { }
   private URL='http://127.0.0.1:3000/';
+// ___________________________________________________________________________________________
 
   //Teacher 
   addTeacher(Teacher:any){
@@ -18,7 +20,12 @@ Teacher:any[]=[];
    getAllTeachers(){
     return this.HTTP.get<any>(this.URL + "Teacher/getallT")
    }
+   deleteTeacher(id:number){
+    return this.HTTP.delete(this.URL+"Teacher//delT/"+id);
+   }
 
+   updateTeacher(teacher:any, id: number){
+}
 
 
   //  ____________________________________________________________________________________________
@@ -35,8 +42,10 @@ Teacher:any[]=[];
 
 
    deletecourse(id:string){
-
+    return  this.HTTP.delete(this.URL+"Course/deleteCourse/" +id );
         }
+
+
    updatecourse(id: string , data: any ){
    }
 
