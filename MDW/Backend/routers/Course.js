@@ -55,10 +55,6 @@ router.post('/addCourse' , (req,res)=>{
         console.log('add  ')
     })
     
-   router.delete('/deleteT' , ()=>{
-    
-        console.log('add  ')
-    })
-
+ 
 
 module.exports= router;

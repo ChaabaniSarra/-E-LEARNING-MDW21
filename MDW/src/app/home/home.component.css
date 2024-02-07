@@ -1,5 +1,18 @@
 /* jjjjjjjjjjjjjjjjj */
+.w3-text-black{
 
+  text-indent: 50px;
+  letter-spacing: 3px;
+  font-size: 15px;
+
+}
+.w3-justify{
+  text-indent: 50px;
+  font-size: 18px;
+  text-align: justify;
+
+
+}
 /* -------------cardsssss */
 
 h3 {

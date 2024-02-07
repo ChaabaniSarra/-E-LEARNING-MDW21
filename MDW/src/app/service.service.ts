@@ -6,6 +6,8 @@ import { HttpClient } from '@angular/common/http';
 export class ServiceService {
 course :any[]=[];
 Teacher:any[]=[];
+Resume:any []=[];
+Student:any[]=[];
 
 
   constructor(private HTTP : HttpClient) { }
@@ -48,5 +50,48 @@ Teacher:any[]=[];
 
    updatecourse(id: string , data: any ){
    }
+
+// ______________________________________________________________________________________________
+// student
+
+addStudent(Student:any){
+  return this.HTTP.post<any>(this.URL+'Student/addStudent', Student)
+ }
+
+
+//  affichage des coures 
+ getAllStudents(){
+  return this.HTTP.get<any>(this.URL+"Student/getAllStudents", )
+  }
+
+
+ deleteStudent(id:string){
+  return  this.HTTP.delete(this.URL+"Student/deleteStudent/" +id );
+      }
+
+
+ updateStudent(id: string , data: any ){
+ }
+// _______________________________________________________________________________________________
+// resume
+addResume(Resume:any){
+
+  return this.HTTP.post<any>(this.URL+'Resume/addResume', Resume);
+ }
+
+
+//  affichage des coures 
+ getAllResumes(){
+  return this.HTTP.get<any>(this.URL+"Resume/getAllResumes" );
+  }
+
+
+ deleteResume(id:string){
+  return  this.HTTP.delete(this.URL+"Resume/deleteResume/" +id );
+      }
+
+
+ updateResume(id: string , data: any ){
+ }
 
 }

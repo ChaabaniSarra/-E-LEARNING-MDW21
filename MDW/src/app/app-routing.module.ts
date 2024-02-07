@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { UpdateTeacherComponent } from './admin/update-teacher/update-teacher.component';
 import { ProfileTeacherComponent } from './teacher/profile-teacher/profile-teacher.component';
 import { AdmineLoginComponent } from './admin/admine-login/admine-login.component';
+import { ProfileStudentComponent } from './student/profile-student/profile-student.component';
+import { AllResumeComponent } from './student/all-resume/all-resume.component';
 
 const routes: Routes = [
   {
@@ -20,17 +22,31 @@ const routes: Routes = [
     pathMatch:'full'
   },
   {path:'home', component:HomeComponent},
-  {path:'courses',component:AllCoursesComponent},
-  {path:'studyTips', component:StudyTipsComponent},
+  {path:'login', component:LoginComponent},
   {path:'sing-in', component:SingInComponent},
+
+  {path:'studyTips', component:StudyTipsComponent},
   {path:'contact', component:ContactComponent},
   {path:'Admin', component:AdminComponent},
+  {path:'Admine-login', component:AdmineLoginComponent},
+
+  {path:'courses',component:AllCoursesComponent},
+  {path:'resumes',component:AllResumeComponent},
+
+
+
   {path:'add-student', component:AddStudentComponent},
   {path:'add-teacher', component:AddTeacherComponent},
-  {path:'login', component:LoginComponent},
+  {path:'add-resume', component:AddTeacherComponent},
+
   {path:'updateT', component:UpdateTeacherComponent},
   {path:'profilT', component:ProfileTeacherComponent},
-  {path:'Admine-login', component:AdmineLoginComponent},
+  {path:'StudentP', component:ProfileStudentComponent},
+
+
+
+
+  ];
 
   
 
@@ -39,7 +55,7 @@ const routes: Routes = [
 
 
 
-];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

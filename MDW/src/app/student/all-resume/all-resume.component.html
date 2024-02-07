@@ -1,0 +1,52 @@
+<nav class="bg-dark navbar-dark">
+    <div class="container">
+      <a href="" class="navbar-brand"><i class="fas fa-tree mr-2"></i>Forest</a>
+    </div>
+    </nav>
+  
+  
+  <!DOCTYPE html>
+  <html lang="en">
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  
+  
+  
+  <body>
+    <section id="header" class="jumbotron text-center">
+      <h1 class="display-3">Our Resume</h1>
+  </section>
+  
+  <!-- cours cards  -->
+  <section id="gallery">
+    <div class="container">
+      <div class="row">
+     
+              <div class="col-lg-3 mb-4"*ngFor="let resume of resumes">
+                <div class="card">
+                    <img src={{resume.img}} alt="" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">{{resume.resumeTitle}}</h5>
+                      <p class="card-text">{{resume.description}}</p>
+                 <a href="" class="w3-button w3-yellow" > update</a>
+  
+                     <a  class=" w3-button w3-blue" (click)="Delete(resume._id)"> Delete</a>
+                     
+                    </div>
+                    </div>
+                  </div>
+    </div>
+  </div>
+  </section>
+  
+  </body>
+  </html>
+  
+    
+   
+      
+    

@@ -23,6 +23,9 @@ import { AdmineLoginComponent } from './admin/admine-login/admine-login.componen
 import { StudentComponent } from './student/student.component';
 import { DeleteTeacherComponent } from './admin/delete-teacher/delete-teacher.component';
 import { DeleteCourseComponent } from './teacher/delete-course/delete-course.component';
+import { ProfileStudentComponent } from './student/profile-student/profile-student.component'; 
+import { AddResumeComponent } from './student/add-resume/add-resume.component';
+import { AllResumeComponent } from './student/all-resume/all-resume.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +48,9 @@ import { DeleteCourseComponent } from './teacher/delete-course/delete-course.com
     StudentComponent,
     DeleteTeacherComponent,
     DeleteCourseComponent,
+    ProfileStudentComponent,
+    AddResumeComponent,
+    AllResumeComponent,
   
   ],
   imports: [
