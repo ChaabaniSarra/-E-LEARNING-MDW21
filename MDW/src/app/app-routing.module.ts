@@ -14,6 +14,7 @@ import { ProfileTeacherComponent } from './teacher/profile-teacher/profile-teach
 import { AdmineLoginComponent } from './admin/admine-login/admine-login.component';
 import { ProfileStudentComponent } from './student/profile-student/profile-student.component';
 import { AllResumeComponent } from './student/all-resume/all-resume.component';
+import { StudentComponent } from './student/student.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,8 @@ const routes: Routes = [
 
   {path:'courses',component:AllCoursesComponent},
   {path:'resumes',component:AllResumeComponent},
+  {path:'student',component:StudentComponent},
+
 
 
 

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-const Student= mongoose.model( 'Student' , {
+const Student= mongoose.model( ' STudent' , {
     profilePicture:String,
     firstName: String,
     lastName: String,
@@ -10,4 +10,4 @@ const Student= mongoose.model( 'Student' , {
 
 } );
 
-module.exports = Student;
+module.exports =  Student;

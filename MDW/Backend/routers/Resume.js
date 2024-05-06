@@ -23,7 +23,6 @@ router.post('/addResume' , (req,res)=>{
   router.get ("/getAllResumes" ,async (req,res)=>{
     try{
         const resume=await Resume.find()
-        // res.json(Resume)
         res.send(resume)
     } catch (err) {
             res.status(400).send("Err");
