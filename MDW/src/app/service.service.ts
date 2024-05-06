@@ -22,11 +22,19 @@ Student:any[]=[];
    getAllTeachers(){
     return this.HTTP.get<any>(this.URL + "Teacher/getallT")
    }
-   deleteTeacher(id:number){
+   getTeacherById( id:string){
+     return this.HTTP.get(this.URL+"Teacher/GetByID/"+id);
+   
+   
+   }
+   deleteTeacher(id:string){
     return this.HTTP.delete(this.URL+"Teacher//delT/"+id);
    }
 
-   updateTeacher(teacher:any, id: number){
+   updateTeacher(teacher:any, id: string){
+    console.log("update teacher service");
+    return this.HTTP.put(this.URL+"Teacher/UpdateT/"+id ,teacher );
+   
 }
 
 
